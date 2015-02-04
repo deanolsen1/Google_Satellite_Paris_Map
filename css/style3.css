@@ -1,0 +1,110 @@
+/*CSS style sheet for credits page*/
+
+.nav ul {
+  list-style: none;
+  background-color: rgba(58,55,55,.2);
+  text-align: center;
+  padding: 0;
+  margin-top: -18px;
+  margin-right: 32%;
+  margin-left: 32%;
+}
+.nav li {
+  font-family: arapey;
+  font-size: 1em;
+  line-height: 40px;
+  height: 40px;
+  margin-bottom: 0px;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #783745;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+ 
+.nav a.active {
+  background-color: #783745;
+  color: #000000;
+  cursor: default;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+img {
+    width: 200px;
+    margin-left: 10px;
+    visibility: hidden;
+}
+    
+h1 {
+	font-family: arapey;
+	font-size: 60px;
+	color: #783745;
+  position: relative;
+  margin-top: -250px;
+  margin-bottom: 75px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+  margin-left: 250px;
+  visibility: hidden;
+}
+
+h2 {
+	font-family: arapey;
+	font-size: 24pt;
+	text-align: left;
+	font-style: normal;
+  width: 80%;
+	margin-bottom: -20px;
+	color: #783745;
+	position: relative;
+	font-weight: 400;
+  visibility: hidden;
+}
+
+body{
+	background-color: #E8E6E1;
+	font-family: arapey;
+	font-style: normal;
+	color: #675A5A;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+  visibility: hidden;
+}
+
+#background{
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    background-image: url("../img/Background4.PNG");
+    background-size: 1800px 1800px;
+    position: absolute;
+}
+
+#text {
+  font-size: 18pt;
+	margin-top: 75px;
+	margin-left: 40px;
+	margin-right: 20px;
+  visibility: hidden;
+}
+
+.link {
+	color: #783745;
+}
+
