@@ -35,8 +35,12 @@ $(document).ready(function() {
       google.maps.event.addDomListener(window, 'load', initialize);
 
     //load json data onto basemap; create tools
-    map.data.loadGeoJson("data/Locationsv4.geojson")
+     // map.data.loadGeoJson("data/Locationsv4.geojson");
 
+     map = L.map("map").setView([48.876, 2.357], 15),
+	googleLayer = new L.Google("ROADMAP"),
+	map.addLayer (googleLayer);
+	
 	$.getJSON("data/Locationsv4.geojson")
 		.done(function(data) {
 
@@ -406,14 +410,6 @@ $(document).ready(function() {
 		$(".temporal-legend").text("On page " + startTimestamp);
 	}	// end createTemporalLegend()
 
-	
-	// Possible heat map layer
-	var heat = L.heatLayer(data, {
-          radius: 15,
-          blur: 20,
-          maxZoom: 16,
-      }).addTo(map);
-	  
 	
 
 
