@@ -44,7 +44,7 @@
 
 #vcr-controls {
 	position: absolute;
-	width: 510px;
+	width: 580px;
     padding: 10px 10px 10px 10px;
 	z-index: 21;
 	margin-bottom: 0px;
@@ -77,8 +77,8 @@
 	height: 980px;
 	width: 300px;
 	float: left;
-	margin-left: 32px;
-	margin-top: 20px;
+	margin-left: 30px;
+	margin-top: 35px;
 	top: 225px;
 	font-family: arapey;
 	padding: 5px 5px 5px 5px;
@@ -101,7 +101,7 @@
 
 div.scroll {
 	width: 95%;
-	height: 85%;
+	height: 90%;
 	margin-left: 3px;
 	margin-bottom: 3px;
 	overflow: scroll;
@@ -132,10 +132,6 @@ div.scroll {
 	margin-left: 10px;
 	margin-top: -45px;
 }
-/*Google Map CSS
-html, body, #map-canvas 
-	{ height: 100%; margin: 0; padding: 0;
-}*/
 
 /*Arch image at top of page*/
 img {
@@ -179,7 +175,13 @@ body{
 	color: #675A5A;
 }
 
-.leaflet-clickable {
+/*Google JS Controls
+*/
+
+
+
+/*Leaflet Controls
+*/.leaflet-clickable {
 	stroke-opacity: .8;
 	z-index: 10;
 }
