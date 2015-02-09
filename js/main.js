@@ -43,7 +43,17 @@ $(document).ready(function() {
         var mapOptions = {
           center: { lat: 48.876, lng: 2.357},
           zoom: 15,
-		  disableDefaultUI: true
+		  disableDefaultUI: false,
+          panControl: false,
+			panControlOptions: {
+  				position: google.maps.ControlPosition.TOP_RIGHT
+			},
+			zoomControl: true,
+			zoomControlOptions: {
+  				style: google.maps.ZoomControlStyle.LARGE,
+  				position: google.maps.ControlPosition.TOP_RIGHT
+			}
+
         };
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
