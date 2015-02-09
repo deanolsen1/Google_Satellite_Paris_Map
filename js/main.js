@@ -210,7 +210,7 @@ $(document).ready(function() {
 					}
 				});
 			}
-		}).addTo(map-canvas);
+		}).addTo(map);
 		updatePropSymbols();
 
 	} // end createPropSymbols()
@@ -420,14 +420,6 @@ $(document).ready(function() {
 		$(".temporal-legend").text("On page " + startTimestamp);
 	}	// end createTemporalLegend()
 
-	
-	// Possible heat map layer
-	var heat = L.heatLayer(data, {
-          radius: 15,
-          blur: 20,
-          maxZoom: 16,
-      }).addTo(map);
-	  
 	
 
 
